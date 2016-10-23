@@ -28,6 +28,7 @@
 
 	$(".nav-item").on("click", function(){
 		$(".left-bar").toggleClass("open");
+		$("#dropdown-button").toggleClass("become-x");
 	});
 
 } )( jQuery );

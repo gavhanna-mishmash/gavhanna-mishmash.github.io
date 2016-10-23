@@ -245,6 +245,11 @@ footer {
 // Mobile
 
 @media (max-width: $bp) {
+.contact, .about-content, .cv-content {
+  min-height: 90vh;
+  flex-direction: column;
+}
+
   .works-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
