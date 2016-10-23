@@ -212,7 +212,7 @@ nav {
     height: 40px;
     background: salmon;
     right: 40px;
-    top: 10px;
+    top: 30px;
     cursor: pointer;
     transition: all .3s ease-in-out;
     &.btn-open {
@@ -228,6 +228,7 @@ nav {
     z-index: 98;
     background: #f6efe5;
     height: 60px;
+    padding-top: 20px;
     h3 {
       padding-left: 10px;
     }
