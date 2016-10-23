@@ -219,6 +219,13 @@ nav {
   display: none;
 }
 
+footer {
+  margin: 20px;
+  text-align: center;
+}
+
+// Mobile
+
 @media (max-width: $bp) {
   .works-wrapper {
     -webkit-box-orient: vertical;
