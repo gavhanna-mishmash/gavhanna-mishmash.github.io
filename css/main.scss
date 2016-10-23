@@ -1,0 +1,155 @@
+@import "_normalize.min";
+
+body {
+  color: #fd9cfd;
+  background: #f5f1e9;
+  font-family: "Josefin Sans";
+  background: url("../bg.jpg");
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #fd9cfd;
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  color: #555;
+}
+
+.underlined {
+  box-shadow: 0 1px 0 0 #fd9cfd;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  .content {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    @media (max-width: 640px) {
+      flex-direction: column;
+    }
+    .name h1 {
+      font-weight: 400;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+// Works page
+
+.works-wrapper {
+  display: flex;
+  max-height: 100vh;
+}
+
+.left-bar {
+  font-size: 1.2rem;
+  margin: 20px;
+  .workspage-nav {
+    min-width: 170px;
+    .nav-item {
+      list-style: none;
+      padding: 6px;
+      a:hover {
+          box-shadow: inset 0 -1px 0 0 pink;
+      }
+    }
+  }
+}
+
+.works-content {
+  padding: 20px;
+  min-height: 95vh;
+  max-height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  .work-item {
+    padding-bottom: 50px;
+    box-shadow: inset 0 -1px 0 0 #aaa;
+    h3 {
+      max-width: 900px;
+      margin: 30px auto 5px auto;
+      font-size: 1.5rem;
+    }
+    .description {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+}
+.image {
+  margin: 0 auto;
+  max-width: 900px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+// Contact page
+
+.contact {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .contact-info {
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+}
+
+// About page
+
+.about-content {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .about {
+    font-size: 1.5rem;
+    margin: 50px auto;
+    max-width: 500px;
+  }
+}
+
+// CV page
+
+.cv-content {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .cv {
+    font-size: 1.5rem;
+    margin: 50px auto;
+    max-width: 500px;
+  }
+}
