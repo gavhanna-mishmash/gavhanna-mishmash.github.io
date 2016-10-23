@@ -233,7 +233,7 @@ nav {
       min-height: 95vh;
       /*max-height: 100vh;*/
       width: 100%;
-      padding: 60px 0px;
+      padding: 40px 0px;
       .work-item {
         padding-top: 60px;
         margin: 0 10px;
@@ -268,7 +268,7 @@ nav {
     height: 40px;
     background: salmon;
     right: 30px;
-    top: 30px;
+    top: 10px;
     cursor: pointer;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -286,7 +286,7 @@ nav {
     z-index: 98;
     background: #f6efe5;
     height: 60px;
-    padding-top: 20px;
+    //padding-top: 20px;
     h3 {
       padding-left: 10px;
     }
