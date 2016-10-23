@@ -21,4 +21,13 @@
 		loopAtEnd: false
 	} );
 
+	$(".drp-btn").on("click", function(){
+		$(this).toggleClass("btn-open");
+		$(".left-bar").toggleClass("open");
+	});
+
+	$(".nav-item").on("click", function(){
+		$(".left-bar").toggleClass("open");
+	});
+
 } )( jQuery );

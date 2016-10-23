@@ -1,5 +1,7 @@
 @import "_normalize.min";
 
+$bp: 640px;
+
 html {
   background: #f6efe5;
 }
@@ -47,12 +49,18 @@ h1, h2, h3 {
     justify-content: space-around;
     width: 100%;
     align-items: baseline;
-    @media (max-width: 640px) {
+    @media (max-width: $bp) {
       flex-direction: column;
     }
     .name h1 {
       font-weight: 400;
     }
+  }
+}
+
+@media (max-width: $bp) {
+  .name, nav {
+    margin: 0 auto;
   }
 }
 
@@ -74,6 +82,9 @@ nav {
   font-size: 1rem;
   margin:0 20px;
   min-width: 170px;
+  .drp-btn {
+    display: none;
+  }
   .workspage-nav {
     .nav-item {
       list-style: none;
@@ -156,5 +167,69 @@ nav {
     font-size: 1.5rem;
     margin: 50px auto;
     max-width: 500px;
+  }
+}
+
+.mob-top-bar {
+  display: none;
+}
+
+@media (max-width: $bp) {
+  .works-wrapper {
+    flex-direction: column;
+    .works-content {
+      max-height: none;
+      overflow: inherit;
+      padding: 0px;
+      min-height: 95vh;
+      max-height: 100vh;
+      width: 100%;
+      padding: 50px 10px;
+      .work-item {
+        padding-top: 40px;
+      }
+    }
+  }
+
+  .left-bar {
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+    background: #f6efe5;
+    transform: translateY(-1000px);
+    transition: all .2s ease-in-out;
+    z-index: 99;
+    &.open {
+      transform: translateY(0px);
+    }
+  }
+  .drp-btn {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    background: salmon;
+    right: 40px;
+    top: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &.btn-open {
+      border-radius: 50%;
+      transform: rotate(180deg);
+    }
+  }
+
+  .mob-top-bar {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 98;
+    background: #f6efe5;
+    height: 60px;
+    h3 {
+      padding-left: 10px;
+    }
   }
 }
