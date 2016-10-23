@@ -1,22 +1,25 @@
 @import "_normalize.min";
 
 $bp: 640px;
+$font-colour: #FF96DA;
+$text-colour: #555;
 
 html {
   background: #f6efe5;
 }
 
 body {
-  color: #fd9cfd;
+  color: #FF96DA;
   background: #f5f1e9;
   font-family: "Josefin Sans";
-  background: url("../bg-sm.jpg");
+  font-family: 'Cormorant Garamond', serif;
+  background: url("../bg-lg.jpg");
   background-size: cover;
 }
 
 a {
   text-decoration: none;
-  color: #fd9cfd;
+  color: $font-colour;
 }
 
 ul {
@@ -27,8 +30,14 @@ p {
   color: #555;
 }
 
+
+
 .underlined {
-  box-shadow: 0 1px 0 0 #fd9cfd;
+  box-shadow: 0 1px 0 0 $font-colour;
+}
+
+.title-underlined {
+  box-shadow: 0 1px 0 0 $text-colour;
 }
 
 h1, h2, h3 {
@@ -113,8 +122,11 @@ nav {
     .nav-item {
       list-style: none;
       padding: 6px;
+      a{
+        color: $text-colour;
+      }
       a:hover {
-          box-shadow: inset 0 -1px 0 0 pink;
+          box-shadow: inset 0 -1px 0 0 $text-colour;
       }
     }
   }
@@ -126,13 +138,19 @@ nav {
   max-height: 100vh;
   width: 100vw;
   overflow: scroll;
+  background: #FFFDF3;
   .work-item {
     padding-bottom: 50px;
-    box-shadow: inset 0 -1px 0 0 #aaa;
+    //box-shadow: inset 0 -1px 0 0 #aaa;
     h3 {
       max-width: 900px;
       margin: 30px auto 5px auto;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      color: $text-colour;
+      margin-bottom: 20px;
+    }
+    .image {
+      margin-bottom: 20px;
     }
     .description {
       max-width: 900px;
@@ -273,7 +291,7 @@ footer {
     z-index: 100;
     width: 40px;
     height: 40px;
-    background: salmon;
+    background: $font-colour;
     right: 30px;
     top: 10px;
     cursor: pointer;
@@ -298,4 +316,21 @@ footer {
       padding-left: 10px;
     }
   }
+}
+
+
+.thinner-image {
+  max-width: 400px;
+}
+
+.less-thinner-image {
+  max-width: 500px;
+}
+
+.image7 {
+  max-width: 850px;
+}
+
+.name h2 a {
+  color: $text-colour;
 }
