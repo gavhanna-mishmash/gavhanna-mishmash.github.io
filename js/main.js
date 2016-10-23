@@ -21,8 +21,8 @@
 		loopAtEnd: false
 	} );
 
-	$(".drp-btn").on("click", function(){
-		$(this).toggleClass("btn-open");
+	$("#dropdown-button").on("click", function(){
+		$(this).toggleClass("become-x");
 		$(".left-bar").toggleClass("open");
 	});
 

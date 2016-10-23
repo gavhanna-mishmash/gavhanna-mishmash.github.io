@@ -285,24 +285,24 @@ footer {
               transform: translateY(0px);
     }
   }
-  .drp-btn {
-    display: block;
-    position: fixed;
-    z-index: 100;
-    width: 40px;
-    height: 40px;
-    background: $font-colour;
-    right: 30px;
-    top: 10px;
-    cursor: pointer;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    &.btn-open {
-      border-radius: 50%;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
-    }
-  }
+  // .drp-btn {
+  //   display: block;
+  //   position: fixed;
+  //   z-index: 100;
+  //   width: 40px;
+  //   height: 40px;
+  //   background: $font-colour;
+  //   right: 30px;
+  //   top: 10px;
+  //   cursor: pointer;
+  //   -webkit-transition: all .3s ease-in-out;
+  //   transition: all .3s ease-in-out;
+  //   &.btn-open {
+  //     border-radius: 50%;
+  //     -webkit-transform: rotate(180deg);
+  //             transform: rotate(180deg);
+  //   }
+  // }
 
   .mob-top-bar {
     display: block;
@@ -334,4 +334,52 @@ footer {
 
 .name h2 a {
   color: $text-colour;
+}
+
+
+
+// dropdown button
+#dropdown-button {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  z-index: 101;
+  span {
+    transition: all .2s ease-in-out;
+  }
+  &:hover > span {
+    background: $text-colour;
+    transform: scaleX(1.1);
+  }
+  &.become-x {
+    span {
+      transform-origin: center;
+    }
+    span:nth-child(2){
+      opacity: 0;
+    }
+    span:nth-child(1) {
+      transform: rotate(45deg) translateY(10px) translateX(10px);
+
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg) translateY(-10px) translateX(10px)
+    }
+  }
+  span {
+    height: 3px;
+    width: 100%;
+    margin: auto;
+    background: #999;
+  }
+  @media (max-width: $bp) {
+    display: flex;
+    position: fixed;
+  }
 }
