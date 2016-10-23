@@ -38,19 +38,34 @@ h1, h2, h3 {
 .wrapper {
   min-height: 100vh;
   min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   .content {
     font-size: 1.5rem;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     @media (max-width: $bp) {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
     .name h1 {
       font-weight: 400;
@@ -65,15 +80,24 @@ h1, h2, h3 {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 
-// Works page
+/* Works page*/
 
 .works-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-height: 100vh;
 }
@@ -126,28 +150,42 @@ nav {
 }
 
 
-// Contact page
+/* Contact page*/
 
 .contact {
   min-height: 100%;
   min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   .contact-info {
     font-size: 1.5rem;
     margin: 0 auto;
   }
 }
 
-// About page
+/* About page*/
 
 .about-content {
   min-height: 100%;
   min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   .about {
     font-size: 1.5rem;
     margin: 50px auto;
@@ -155,14 +193,21 @@ nav {
   }
 }
 
-// CV page
+/* CV page*/
 
 .cv-content {
   min-height: 100%;
   min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   .cv {
     font-size: 1.5rem;
     margin: 50px auto;
@@ -176,7 +221,10 @@ nav {
 
 @media (max-width: $bp) {
   .works-wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     .works-content {
       max-height: none;
       overflow: inherit;
@@ -184,9 +232,9 @@ nav {
       min-height: 95vh;
       max-height: 100vh;
       width: 100%;
-      padding: 50px 10px;
+      padding: 60px 10px;
       .work-item {
-        padding-top: 40px;
+        padding-top: 60px;
       }
     }
   }
@@ -197,11 +245,14 @@ nav {
     position: fixed;
     width: 100vw;
     background: #f6efe5;
-    transform: translateY(-1000px);
-    transition: all .2s ease-in-out;
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     z-index: 99;
     &.open {
-      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
     }
   }
   .drp-btn {
@@ -214,10 +265,12 @@ nav {
     right: 40px;
     top: 30px;
     cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     &.btn-open {
       border-radius: 50%;
-      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
     }
   }
 
