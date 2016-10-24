@@ -245,10 +245,22 @@ footer {
 // Mobile
 
 @media (max-width: $bp) {
-.contact, .about-content, .cv-content {
-  min-height: 90vh;
-  flex-direction: column;
-}
+  .contact, .about-content, .cv-content {
+    min-height: 90vh;
+    flex-direction: column;
+    //margin: 10px;
+  }
+
+  .about, .cv {
+    padding: 5%;
+  }
+  .about {
+    text-align: center;
+  }
+  .cv span {
+    text-align: center;
+    display: block;
+  }
 
   .works-wrapper {
     -webkit-box-orient: vertical;
@@ -290,24 +302,6 @@ footer {
               transform: translateY(0px);
     }
   }
-  // .drp-btn {
-  //   display: block;
-  //   position: fixed;
-  //   z-index: 100;
-  //   width: 40px;
-  //   height: 40px;
-  //   background: $font-colour;
-  //   right: 30px;
-  //   top: 10px;
-  //   cursor: pointer;
-  //   -webkit-transition: all .3s ease-in-out;
-  //   transition: all .3s ease-in-out;
-  //   &.btn-open {
-  //     border-radius: 50%;
-  //     -webkit-transform: rotate(180deg);
-  //             transform: rotate(180deg);
-  //   }
-  // }
 
   .mob-top-bar {
     display: block;
