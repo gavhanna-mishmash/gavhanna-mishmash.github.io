@@ -229,7 +229,12 @@ nav {
   .cv {
     font-size: 1.5rem;
     margin: 50px auto;
-    max-width: 500px;
+    max-width: 700px;
+    font-size: 1.2rem;
+    h3 {
+      color: $text-colour;
+      text-decoration: underline;
+    }
   }
 }
 
