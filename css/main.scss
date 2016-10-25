@@ -109,6 +109,9 @@ nav {
   display: -ms-flexbox;
   display: flex;
   max-height: 100vh;
+  @media (max-width: $bp){
+    max-height: none;
+  }
 }
 
 .left-bar {
