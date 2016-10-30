@@ -1,13 +1,6 @@
-;( function( $ ) {
+;( function($){
 
-
-  // $('.nav-item a').click(function(e) {
-  //   var goTo = $(this).attr('href');
-  //   $(".works-content").animate({scrollTop:$(goTo).offset().top}, 1000);
-  //   e.preventDefault();
-  // });
-
-	$( '.swipebox' ).swipebox( {
+	$('.swipebox').swipebox({
 		useCSS : true,
 		useSVG : true,
 		initialIndexOnArray : 0,
@@ -19,7 +12,7 @@
 		afterOpen: null,
 		afterClose: function() {},
 		loopAtEnd: false
-	} );
+	});
 
 	$("#dropdown-button").on("click", function(){
 		$(this).toggleClass("become-x");
@@ -31,4 +24,4 @@
 		$("#dropdown-button").toggleClass("become-x");
 	});
 
-} )( jQuery );
+})(jQuery);
